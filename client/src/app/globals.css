@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #fcfdfa;
+}
+
+.main {
+  background-image: url("/gggrain.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.outer-panel{
+  box-shadow: 12px 12px 0 #0000003a;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+}
+
+@font-face {
+  font-family: 'castlevania';
+  src: url('/font/Jersey_10/Jersey10-Regular.ttf') format('truetype');
+  /* Add additional src statements for different font file formats if necessary */
+}
+
+.logoFont {
+  font-family: 'castlevania', Arial, sans-serif !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

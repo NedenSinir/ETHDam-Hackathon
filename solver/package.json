@@ -1,0 +1,25 @@
+{
+  "name": "solver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@1inch/fusion-sdk": "^1.0.1-rc.33",
+    "@cowprotocol/cow-sdk": "^5.2.0",
+    "ethers": "^6.11.1",
+    "install": "^0.13.0",
+    "npm": "^10.5.2",
+    "web3": "^4.7.0"
+  }
+}
